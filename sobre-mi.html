@@ -9,55 +9,67 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-purple-100 via-white to-pink-100 text-gray-800">
+<body class="text-gray-800">
 
   <!-- NAVBAR -->
   <nav class="bg-gray-900 text-white p-4 shadow-lg sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Luis Yordy</h1>
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wide">Luis Yordy</h1>
       <ul class="flex space-x-6 text-lg">
         <li><a href="index.html" class="hover:text-purple-400 transition">Inicio</a></li>
         <li><a href="sobre-mi.html" class="text-purple-400 border-b-2 border-purple-400 font-semibold">Sobre Mí</a></li>
         <li><a href="portafolio.html" class="hover:text-purple-400 transition">Portafolio</a></li>
+        <li><a href="CV.html" class="hover:text-purple-400 transition">Currículum</a></li>
+        <li><a href="contacto.html" class="hover:text-purple-400 transition">Contacto</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- SOBRE MÍ -->
   <section class="py-20 px-6">
-    <div class="max-w-5xl mx-auto bg-white p-10 rounded-3xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+    <div class="max-w-6xl mx-auto bg-white p-10 rounded-3xl shadow-xl transition-all duration-300 hover:shadow-2xl">
       <h2 class="text-4xl font-extrabold text-purple-700 mb-8 text-center">Sobre Mí</h2>
       <div class="grid md:grid-cols-2 gap-10 items-center">
-<div class="rounded-xl overflow-hidden shadow-lg w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300">
-  <video autoplay loop muted playsinline class="w-full h-auto">
-    <source src="img/vid1.mp4" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
-  </video>
-</div>
 
+        <!-- Video -->
+        <div class="rounded-xl overflow-hidden shadow-lg w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300">
+          <video autoplay loop muted playsinline class="w-full h-auto rounded-lg">
+            <source src="img/vid1.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+
+        <!-- Descripción -->
         <div>
           <p class="mb-4 text-lg leading-relaxed">
-            Soy <span class="text-purple-700 font-semibold">Luis Yordy Cifuentes Carrillo</span>, un desarrollador web, estudiante de la carrera de INGENIRIA EN SISTEMAS Y CIENCIAS DE LA COMPUTACION</span>, de 8ctavo ciclo, de la universidad mariano galvez de guatemala, apasionado por crear soluciones digitales modernas que combinan diseño, funcionalidad e impacto real.
+            Soy <span class="text-purple-700 font-semibold">Luis Yordy Cifuentes Carrillo</span>, un desarrollador web y estudiante de <span class="font-semibold">Ingeniería en Sistemas y Ciencias de la Computación</span> (8vo ciclo) en la Universidad Mariano Gálvez de Guatemala. Me apasiona crear soluciones digitales modernas que combinan diseño, funcionalidad e impacto real.
           </p>
           <p class="mb-4 text-lg leading-relaxed">
-            Autodidacta por naturaleza y curioso por vocación, disfruto aprender constantemente sobre nuevas tecnologías y enfoques. Me especializo en desarrollar interfaces limpias, accesibles y responsivas con tecnologías como <span class="font-semibold">HTML5, CSS3, Tailwind CSS</span> y <span class="font-semibold">JavaScript</span>.
+            Autodidacta por naturaleza y curioso por vocación, disfruto aprender constantemente sobre nuevas tecnologías y enfoques innovadores. Me especializo en interfaces limpias, accesibles y responsivas con <span class="font-semibold">HTML5, CSS3, Tailwind CSS</span> y <span class="font-semibold">JavaScript</span>.
           </p>
           <p class="mb-4 text-lg leading-relaxed">
-            Además, utilizo <span class="font-semibold">Git y GitHub</span> para trabajar de forma ordenada y colaborativa. Mi compromiso está en construir proyectos que aporten valor, que resuelvan problemas y que inspiren con su diseño.
+            También utilizo <span class="font-semibold">Git y GitHub</span> para mantener un flujo de trabajo profesional y colaborativo. Mi objetivo es crear proyectos con alto valor y que inspiren por su diseño y utilidad.
           </p>
           <p class="text-lg leading-relaxed text-gray-700 italic">
             "El código es más que instrucciones: es una oportunidad para innovar, conectar y transformar el mundo digital."
           </p>
         </div>
       </div>
+
+      <!-- Links Profesionales -->
+      <div class="mt-10 flex flex-wrap justify-center gap-6 text-center">
+        <a href="https://github.com/48663600/desarrollo-web" target="_blank" class="px-6 py-3 bg-gray-900 text-white rounded-lg shadow-md hover:bg-purple-700 transition"><i class="bi bi-github"></i> GitHub</a>
+        <a href="contacto.html" class="px-6 py-3 bg-green-600 text-white rounded-lg shadow-md hover:bg-green-700 transition"><i class="bi bi-envelope"></i> Contacto</a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white text-center py-6">
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
     <p>&copy; 2025 Luis Yordy Cifuentes Carrillo | Todos los derechos reservados.</p>
   </footer>
 
